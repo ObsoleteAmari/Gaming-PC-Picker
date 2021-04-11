@@ -1,0 +1,6 @@
+run = 'python main.py; xdg-mime default firefox.desktop application/html; firefox index.html'
+# This file does:
+# 1. Run python
+# 2. Set Firefox as the default html opener
+# 3. Opens index.html, which redirects you to the amazon page for the product
+# Repl.it is like a virtual computer that runs Linux, which is an operating system, similar to Windows.
