@@ -1,6 +1,8 @@
-run = 'python main.py; xdg-mime default firefox.desktop application/html; firefox index.html'
-# This file does:
-# 1. Run python
-# 2. Set Firefox as the default html opener
-# 3. Opens index.html, which redirects you to the amazon page for the product
-# Repl.it is like a virtual computer that runs Linux, which is an operating system, similar to Windows.
+run = 'python main.py; python3 -m http.server 8080 & firefox localhost:8080/index.html'
+# This file does
+# 1. Runs python file
+# 2. Creates a local http server to show the html document on.
+# 3. Opens index.html in firefox on the replit virtual machine, which already has the redirect code outputted from the python file, then redirects you to the amazon page for the recommended product.
+# Repl.it shell is a virtual machine that runs Linux, which is an operating system, just like Windows. This code specifies the commands that need to be run in the shell when you press the run button. 
+# I know coding may seem confusing and strange. I learn coding through mostly experimenting, and looking for what I need on the internet. I know there are people that can explain coding stuff much better than me on this very internet you are on (unless of course you read this after you downloaded the code). But if you bothered to read this and bother to give me feedback, I would appreciate.
+# This seemed to be the only way to redirect the user to the website: by launching it in replit firefox. Use the normal one for now. I am working on the normal one in a separate program in Visual Studio Code and in a separate github branch,but I'm keeping this one for reference
